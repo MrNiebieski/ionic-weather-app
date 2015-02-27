@@ -15,7 +15,8 @@ var forecastioWeather = ['$q', '$resource', '$http', 'FORECASTIO_KEY',
   return {
     //getAtLocation: function(lat, lng) {
     getCurrentWeather: function(lat, lng) {
-      return $http.jsonp(url + lat + ',' + lng + '?callback=JSON_CALLBACK');
+      //return $http.jsonp(url + lat + ',' + lng + '?callback=JSON_CALLBACK');
+      return $http.jsonp('https://manage.pineconetassel.com/index.php/api/v1/colors2');
     }
   }
 }];
